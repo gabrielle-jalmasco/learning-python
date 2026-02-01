@@ -42,8 +42,20 @@ print(expense_5_convert)
 
 #calculation
 total_budget_for_the_month = monthly_budget_input_convert
-print(f"Total budget for the month: {total_budget_for_the_month}")
+print(f"\nTotal budget for the month: {total_budget_for_the_month}")
 
-
+# total spent
 total_spent = expense_1_convert + expense_2_convert + expense_3_convert + expense_4_convert + expense_5_convert
-print(f"Total expense for the month: {total_spent}")
+print(f"\nTotal expense for the month: {total_spent}")
+
+# remaining budget
+remaining_budget = total_budget_for_the_month - total_spent
+print(f"\nRemaining budget: ${remaining_budget:.2f}")
+
+# percentage of budget used
+percentage_budget_used = total_spent / total_budget_for_the_month * 100
+print(f"\nPercentage of the budget used: %{percentage_budget_used:.2f}")
+
+# average expense amount
+average_expense_amount = expense_1_convert + expense_2_convert + expense_3_convert + expense_4_convert + expense_5_convert / total_budget_for_the_month
+print(f"Average expense amount: ${average_expense_amount}")
