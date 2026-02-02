@@ -19,3 +19,5 @@ user_password = input("Enter password: ")
 
 print(f"\nPassword correct? {user_password == correct_password}")
 print(f"Password incorrect? {user_password != correct_password}")
+
+# string  comparisons == are case-sensitive
